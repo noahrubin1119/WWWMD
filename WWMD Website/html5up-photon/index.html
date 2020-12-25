@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Photon by HTML5 UP</title>
+		<title>What's Wrong With Me Doctor?</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,6 +31,10 @@
 					</ul>
 				</div>
 			</section>
+
+			<a href="#four" style="position: fixed;
+  bottom: 10px;
+  right: 10px; z-index: 1;" class="button primary">Get in Touch</a>
 
 		<!-- One -->
 			<section id="one" class="main style1">
@@ -122,38 +126,87 @@
 						<h2>Past Podcasts</h2>
 					</header>
 					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for podcasts..." title="Type in a name">
+					<br>
+					<ul id="podcasts" style="list-style-type: none; margin:0; padding:0;">
 					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
+						<div class="col-4 col-12-medium"><li><a>
 							<span class="image fit"><img src="images/wash.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
+							<h3>Podcast 1</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<audio controls>
 								<source src="./Podcasts/test.mp3" type="audio/mpeg">
 									Your browser does not support the audio element.
 								</audio>
-						</div>
-						<div class="col-4 col-12-medium">
+						</a></li></div>
+						<div class="col-4 col-12-medium"><li><a>
 							<span class="image fit"><img src="images/burger.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
+							<h3>Podcast 2</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<audio controls>
 								<source src="./Podcasts/test.mp3" type="audio/mpeg">
 									Your browser does not support the audio element.
 								</audio>
-						</div>
-						<div class="col-4 col-12-medium">
+						</a></li></div>
+						<div class="col-4 col-12-medium"><li><a>
 							<span class="image fit"><img src="images/dog.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
+							<h3>Podcast 3</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<audio controls>
 								<source src="./Podcasts/test.mp3" type="audio/mpeg">
 									Your browser does not support the audio element.
 								</audio>
-						</div>
+						</a></li></div>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium"><li><a>
+								<span class="image fit"><img src="images/wash.jpg" alt="" /></span>
+								<h3>Podcast 4</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<audio controls>
+									<source src="./Podcasts/test.mp3" type="audio/mpeg">
+										Your browser does not support the audio element.
+									</audio>
+							</a></li></div>
+							<div class="col-4 col-12-medium"><li><a>
+								<span class="image fit"><img src="images/burger.jpg" alt="" /></span>
+								<h3>Podcast 5</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<audio controls>
+									<source src="./Podcasts/test.mp3" type="audio/mpeg">
+										Your browser does not support the audio element.
+									</audio>
+							</a></li></div>
+							<div class="col-4 col-12-medium"><li><a>
+								<span class="image fit"><img src="images/dog.jpg" alt="" /></span>
+								<h3>Podcast 6</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<audio controls>
+									<source src="./Podcasts/test.mp3" type="audio/mpeg">
+										Your browser does not support the audio element.
+									</audio>
+							</a></li></div>
 					</div>
+				</ul>
 				</div>
 			</section>
-
+			<script>
+			function myFunction() {
+			    var input, filter, ul, li, a, i, txtValue;
+			    input = document.getElementById("myInput");
+			    filter = input.value.toUpperCase();
+			    ul = document.getElementById("podcasts");
+			    li = ul.getElementsByTagName("li");
+			    for (i = 0; i < li.length; i++) {
+			        a = li[i].getElementsByTagName("a")[0];
+			        txtValue = a.textContent || a.innerText;
+			        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			            li[i].style.display = "";
+			        } else {
+			            li[i].style.display = "none";
+			        }
+			    }
+			}
+			</script>
 		<!-- Four -->
 			<section id="four" class="main style2 special">
 				<div class="container">
@@ -488,7 +541,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 			<section id="footer">
-				<p>The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment.<br>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+					<img height="75em" src="images/WWWMD-mic.png"></img><p>The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment.<br>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
 				<ul class="icons">
 					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
