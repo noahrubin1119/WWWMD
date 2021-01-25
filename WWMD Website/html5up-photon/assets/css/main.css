@@ -2819,7 +2819,8 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #fff;
+			background: #86c5da
+;
 		}
 
 		.main.style2 {
@@ -2917,8 +2918,8 @@ input, select, textarea {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		//background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #ff6d69 5%, #ff6d69 30%, #ff6d69);
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #4fa49a 5%, #4361c2);
+		//background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #ff6d69 5%, #ff6d69 30%, #ff6d69);
 
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
