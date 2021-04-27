@@ -1,3 +1,19 @@
+ 
+
+<?php
+
+if($_POST["name"]) {
+
+mail("noahgidon@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: noahgidon@gmaail.com");
+
+}
+
+?>
+
+
+
 <!DOCTYPE HTML>
 <!--
 	Photon by HTML5 UP
@@ -5,6 +21,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+<div class="navbar"> -->
+	<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
+<!--</div>-->
 	<head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KV94FNJJEB"></script>
@@ -18,7 +40,7 @@
 		<title>What's Wrong With Me Doctor?</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main1.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
@@ -39,25 +61,60 @@
 <meta name="theme-color" content="#ffffff">
 	</head>
 	<body class="is-preload">
+			<CENTER>
+			<div id="navbar" class="desktop">
+			  <a href="#podcasts">Episodes</a>
+			  <a href="#two">Who Are We?</a>
+			  <a href="#zero" id="logo"><img height="75em" src="images/Logo.png"></img></a>
+				<a href="#one">Ask A Question</a>
+				<a href="#sponsor">Sponsor the Show</a>
+			  </div>
+			</div>
+			</CENTER>
+		<CENTER>
+			<div id="navbar" class="mobile">
+			  <a href="#zero" id="logo"><img height="75em" src="images/Logo.png"></img></a>
+			  </div>
+			</div>
+			</CENTER>
+		<style>
+					@media screen and (max-width: 850px) {
+					  div.desktop {
+						display: none;
+					  }
+					}
+					@media screen and (min-width: 851px) {
+					  div.mobile {
+						display: none;
+					  }
+					}
+		</style>
+				
+				
+			
+			<!--<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>-->
 		<!-- Header -->
-			<section id="header">
+			<section id="zero" class="main style2" style="padding-top: 150px; padding-bottom: 25px;">
 				<div class="inner">
 						<div class="row gtr-150">
-							<div class="col-6 col-12-medium">
+							<div class="col-2 col-12-medium">
 							</div>
-							<div class="col-6 col-12-medium">
-							</div>
-						</div>
-						<img height="200em" src="images/WWWMD-mic.png"></img><h1>What's Wrong With Me Doctor?</h1>
-
-						<h3>A medical podcast featuring expert physicians discussing common medical conditions in an easy to understand format</h3>
-						<div class="row gtr-150">
-							<div class="col-3 col-12-medium">
-							</div>
-							<div class="col-6 col-12-medium">
-														<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></script>
-    <div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
+							<div class="col-4 col-12-medium">
+								<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></script>
+								<div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
 								<style>
 								.redcircle-link:link {
 									color: #ea404d;
@@ -73,32 +130,103 @@
 									color: #ea404d;
 								}
 								</style>
+								<img style="border-radius: 7.5px;" src="./images/Listen-on-Apple-Podcasts-badge.jpg" width="30%"></img>
+								<img style="border-radius: 5px;"src="./images/google podcasts.png" width="30%"></img>
+								<img style="border-radius: 5px;"src="./images/Listen-on-Spotify-badge@2x.png" width="30%"></img>
+								<br><strong><a href="#podcasts"><h4 style="text-decoration: underline; color: #907ac3">Listen to previous episodes.</h4></a></strong>
 							</div>
-							<div class="col-3 col-12-medium">
+							<div class="col-4 col-12-medium" style="text-align: left;">
+								<h4 style="color: #0D5B99;">Episode 4:</h4>
+								<strong><h1 style="color: #373737;">Asthma</h1></strong>
+								<hr style="color: #373737;" width="50%">
+								<h4 style="color: #373737;">In this podcast, Dr. Landa discusses Asthma and clears up some popular misconceptions about the common ailment.</h4>
 							</div>
-							
+							<div class="col-2 col-12-medium">
 							</div>
-							<h3>Most Recent Podcast</h3>
-						<!--<ul class="actions special">
-							<li><a href="#one" class="button scrolly">More of What's Wrong With Me Doctor</a></li>
-						</ul>-->
+							</div>
 				</div>
+				
 			</section>
+			
+			
+			<a href="#subscribe" style="position: fixed;
+			  bottom: 10px;
+			  right: 10px; z-index: 1;
+			  background-color: #735CE4;" class="button primary" onclick="openForm()">SUBSCRIBE</a>
+			 <style>
+			 /* The popup form - hidden by default */
+			.form-popup {
+			  display: none;
+			  position: fixed;
+			  bottom: 7px;
+			  right: 7px;
+			  z-index: 9;
+			  border-radius: 5px;
+			}
+			 </style>
+			<div class="form-popup" id="myForm" style="background-color: #735CE4; padding: 10px;">
+				
+			<!-- Begin Mailchimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="https://whatswrongwithmedoctor.us7.list-manage.com/subscribe/post?u=de9a2a2710f7f6cca4bd4f2bd&amp;id=369bb2fbeb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+					
+					<input style="background-color: #fff;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_de9a2a2710f7f6cca4bd4f2bd_369bb2fbeb" tabindex="-1" value=""></div>
+					<div class="clear"><input type="submit" class="button primary" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+				</div>
+			<a style="position: fixed; bottom: 5px; right: 15px; cursor: pointer;" onclick="closeForm()">x</a>
+			</div>
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-			<a href="#sponsor" style="position: fixed;
-  bottom: 10px;
-  right: 10px; z-index: 1;" class="button primary">Sponsor Our Show</a>
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 		<!-- One -->
 			<section id="one" class="main style1">
-				<div class="container">
+				<div class="container"> 
+				<CENTER><a href="#one" class="button scrolly" style="position: relative; top: -135px; background-color: #fff;">ASK THE DOCTORS A QUESTION OF YOUR OWN</a></CENTER>
 					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
+						<div class="col-2 col-12-medium">
+</div>
+						<div class="col-8 col-12-medium">
 							<header class="major">
-								<h2>Never miss a podcast!</h2>
+								<CENTER><h4>Do you have something that’s been bothering you, or just have a topic you want to learn more about? Ask the doctors!</h4></CENTER>
 							</header>
-							<p>Enter your email to be notified when we drop a new podcast.
-							<!-- Begin Mailchimp Signup Form -->
+							<form method="post" action="/action_page.php" target="_blank">
+								<div class="container">
+									<div class="row gtr-150">
+									<div class="col-6 col-12-medium">
+										<input style="background-color: #fff; color: #999;" type="text" id="fname" name="name" placeholder="Your full name.." maxlength="40">
+									</div>
+									<div class="col-6 col-12-medium">
+										<input style="background-color: #fff; color: #999;" type="text" id="email" name="cemail" placeholder="Your email.." maxlength="40">
+										<br>
+									</div>
+									</div>	
+									<div class="row gtr-150">
+									<div class="col-12 col-12-medium">
+										<textarea style="background-color: #fff; color: #999;" id="subject" name="subject" placeholder="Write something.." style="height:200px" maxlength="5000"></textarea>
+									</div>
+									<div class="col-12 col-12-medium">
+									<br>
+									<CENTER><p>Our responses are not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p></CENTER>
+									<CENTER><input style="background-color: #fff"  type="submit" value="Submit"></CENTER>
+									</div>
+									</div>
+										
+							</form>
+							
+							<!--<p>Enter your email to be notified when we drop a new podcast.
+							<!-- Begin Mailchimp Signup Form --
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#f; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -109,37 +237,30 @@
 <div id="mc_embed_signup">
 <form action="https://whatswrongwithmedoctor.us7.list-manage.com/subscribe/post?u=de9a2a2710f7f6cca4bd4f2bd&amp;id=369bb2fbeb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div style="background: #fff;" id="mc_embed_signup_scroll">
-	<!--<label for="mce-EMAIL">Subscribe</label>-->
+	<!--<label for="mce-EMAIL">Subscribe</label>--
 	<input style="background: #fff;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--
     <div style="position: absolute; left: -5000px;  " aria-hidden="true"><input type="text" name="b_de9a2a2710f7f6cca4bd4f2bd_369bb2fbeb" tabindex="-1" value=""></div>
     <br><div style=" class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background: #fff;"></div>
     </div>
 </form>
 </div>
-</p>
+</p> -->
 
 <!--End mc_embed_signup--></div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/email.jpg" alt="" /></span>
+						<div class="col-2 col-12-medium">
 						</div>
-						<ul class="actions special">
-							<li><a href="#podcasts" class="button scrolly">Jump to Archived Podcasts</a></li>
-						</ul>
 					</div>
 				</div>
 			</section>
 
 			<section id="two" class="main style2">
 				<div class="container">
-
-					<CENTER><h2>About the Show</h2></CENTER>
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Our Host - Ray Hammer!</h2>
-							</header>
-							<p>Meet our host, Ray Hammer! Ray has been in radio for many years, and has hosted shows since 1986. He has a M.S. in Journalism Mass Communication, and an interest in medicine. He started What's Wrong With Me Doctor at the start of 2021, towards the end of the COVID19 Global Pandemic. Want to be featured on the podcast and meet Ray? Email him at <a href="mailto:rayhammer@whatswrongwithmedoctor.com">rayhammer@whatswrongwithmedoctor.com</a></p>
+							
+							<strong><h1 style="color: #373737;">Meet the Host!</h1></strong>
+							<h4 style="color: #373737;">Meet our host, Ray Hammer! Ray has been in radio for many years, and has hosted shows since 1986. He has a M.S. in Journalism Mass Communication, and an interest in medicine. He started What's Wrong With Me Doctor at the start of 2021, towards the end of the COVID19 Global Pandemic. Want to be featured on the podcast and meet Ray? Email him at <a href="mailto:rayhammer@whatswrongwithmedoctor.com">rayhammer@whatswrongwithmedoctor.com</a></h4>
 
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -147,77 +268,71 @@
 
 							</div>
 					</div>
+					</div>
+					</section>
+					<div class="docs">
+					<section id="doctors">
+						<div class="container">
+							<br>
+							<div class="row gtr-150">
+								<div class="col-3 col-12-medium">
+								<div class="doctor">
+									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
+								</div>
+								<h4 style="color: #373737;">Dr. Placeholder</h4>
+								<h6 style="color: #373737;">TITLE</h4>
+								</div>
+								<div class="col-3 col-12-medium">
+								<div class="doctor">
+									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr. Placeholder</h4>
+								<h6 style="color: #373737;">TITLE</h4>
+								</div>
+								</div>
+								<div class="col-3 col-12-medium">
+								<div class="doctor">
+									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr. Placeholder</h4>
+								<h6 style="color: #373737;">TITLE</h4>
+								</div>
+								</div>
+								<div class="col-3 col-12-medium">
+								<div class="doctor">
+									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr. Placeholder</h4>
+								<h6 style="color: #373737;">TITLE</h4>
+								</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					</div>
+					<style>
+					@media screen and (max-width: 1000px) {
+					  div.docs {
+						display: none;
+					  }
+					}
+					</style>
 					<br>
-					<CENTER><h2 id="sponsor">Sponsor our Show</h2></CENTER>
+					<section id="sponsor" class="main style2">
+					<div class="container">
+					<CENTER><strong><h1 style="color: #373737;">Sponsor our Show</h1></strong></CENTER>
 					<div class="row gtr-150">
 						<div class="col-8 col-12-medium">
-						<CENTER><p>If you'd like to sponsor the What's Wrong With Me Doctor Podcast please email <a href="mailto:rayhammer@whatswrongwithmedoctor.com">rayhammer@whatswrongwithmedoctor.com</a></p></CENTER>
-						</div>
-						<div class="col-4 col-12-medium">
-								<CENTER><img height="200em" src="images/WWWMD-mic.png"></CENTER>
-						</div>
-					</div>
-					<!--<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<header class="major">
-								<h2>Meet the Doctors</h2>
-							</header>
-							<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-						</div>
-					</div> -->
-				</div>
-			</section>
-			<!--<section id="sponsor" class="main style2">
-				<div class="container">
-					<CENTER><h2>Sponsor our Show</h2></CENTER>
-					<div class="row gtr-150">
-						<div class="col-8 col-12-medium">
-						<CENTER><p>If you'd like to sponsor the What's Wrong With Me Doctor Podcast please email sponsor@whatswrongwithmedoctor.com</p></CENTER>
+						<CENTER><h4 style="color: #373737;">If you'd like to sponsor the What's Wrong With Me Doctor Podcast please email <a href="mailto:rayhammer@whatswrongwithmedoctor.com">rayhammer@whatswrongwithmedoctor.com</a></h4></CENTER>
 						</div>
 						<div class="col-4 col-12-medium">
 								<CENTER><img height="200em" src="images/WWWMD-mic.png"></CENTER>
 						</div>
 					</div>
 				</div>
-			</section>-->
-		<!-- Two
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-								<li><span class="icon solid style4 major fa-cog"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-calendar"></span></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
-							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-						</div>
-					</div>
-				</div>
 			</section>
--->
 		<!-- Three -->
 			<section id="podcasts" class="main style1">
 				<div class="container">
-					<header class="major">
-						<h2>Past Podcasts</h2>
-					</header>
-					<p>Find and subscribe to What's Wrong With Me Doctor everywhere you listen to podcasts!</p>
+						<strong><h1 style="color: #fff;">Past Podcasts</h1></strong>
+					<h4>Find and subscribe to What's Wrong With Me Doctor everywhere you listen to podcasts!</h4>
 					<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for podcasts..." title="Type in a name" style="background: #fff;">-->
 					
 					<ul id="podcasts" style="list-style-type: none; margin:0; padding:0;">
@@ -226,89 +341,87 @@
 						<div class="col-6 col-12-medium">
 							
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/35239aa3-aec2-4271-b872-658df51c12e0"></script>
-    <div class="redcirclePlayer-35239aa3-aec2-4271-b872-658df51c12e0"></div>
-    <style>
-    .redcircle-link:link {
-        color: #ea404d;
-        text-decoration: none;
-    }
-    .redcircle-link:hover {
-        color: #ea404d;
-    }
-    .redcircle-link:active {
-        color: #ea404d;
-    }
-    .redcircle-link:visited {
-        color: #ea404d;
-    }
-</style>
-<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="https://redcircle.com?utm_source=rc_embedded_player&utm_medium=web&utm_campaign=embedded_v1">RedCircle</a></p>
-<p>In this podcast, Dr. Landa discusses Asthma and clears up some popular misconceptions about the common ailment.</p>
-</div>
+							<div class="redcirclePlayer-35239aa3-aec2-4271-b872-658df51c12e0"></div>
+							<style>
+							.redcircle-link:link {
+								color: #ea404d;
+								text-decoration: none;
+							}
+							.redcircle-link:hover {
+								color: #ea404d;
+							}
+							.redcircle-link:active {
+								color: #ea404d;
+							}
+							.redcircle-link:visited {
+								color: #ea404d;
+							}
+						</style>
+						<p>In this podcast, Dr. Landa discusses Asthma and clears up some popular misconceptions about the common ailment.</p>
+						</div>
 						<div class="col-6 col-12-medium">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></script>
-    <div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
-    <style>
-    .redcircle-link:link {
-        color: #ea404d;
-        text-decoration: none;
-    }
-    .redcircle-link:hover {
-        color: #ea404d;
-    }
-    .redcircle-link:active {
-        color: #ea404d;
-    }
-    .redcircle-link:visited {
-        color: #ea404d;
-    }
-</style>
-<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="https://redcircle.com?utm_source=rc_embedded_player&utm_medium=web&utm_campaign=embedded_v1">RedCircle</a></p>
-<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
-							</div>
+						<div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
+						<style>
+						.redcircle-link:link {
+							color: #ea404d;
+							text-decoration: none;
+						}
+						.redcircle-link:hover {
+							color: #ea404d;
+						}
+						.redcircle-link:active {
+						color: #ea404d;
+					}
+					.redcircle-link:visited {
+						color: #ea404d;
+					}
+				</style>
+				
+				<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
+											</div>
 					<!--</div>
 					<div class="row gtr-150">-->
 					
 						<div class="col-6 col-12-medium">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/699f526f-2b3f-4c04-bbf7-cd5af08fccf0"></script>
-    <div class="redcirclePlayer-699f526f-2b3f-4c04-bbf7-cd5af08fccf0"></div>
-    <style>
-    .redcircle-link:link {
-        color: #ea404d;
-        text-decoration: none;
-    }
-    .redcircle-link:hover {
-        color: #ea404d;
-    }
-    .redcircle-link:active {
-        color: #ea404d;
-    }
-    .redcircle-link:visited {
-        color: #ea404d;
-    }
-</style>
-<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="https://redcircle.com?utm_source=rc_embedded_player&utm_medium=web&utm_campaign=embedded_v1">RedCircle</a></p>
-
-</div>
+							<div class="redcirclePlayer-699f526f-2b3f-4c04-bbf7-cd5af08fccf0"></div>
+							<style>
+							.redcircle-link:link {
+								color: #ea404d;
+								text-decoration: none;
+							}
+							.redcircle-link:hover {
+								color: #ea404d;
+							}
+							.redcircle-link:active {
+								color: #ea404d;
+							}
+							.redcircle-link:visited {
+								color: #ea404d;
+							}
+						</style>
+<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
+						</div>
 						<div class="col-6 col-12-medium">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/3e27dcb5-338f-4e3c-b7c3-1327c16b9c4b"></script>
-    <div class="redcirclePlayer-3e27dcb5-338f-4e3c-b7c3-1327c16b9c4b"></div>
-    <style>
-    .redcircle-link:link {
-        color: #ea404d;
-        text-decoration: none;
-    }
-    .redcircle-link:hover {
-        color: #ea404d;
-    }
-    .redcircle-link:active {
-        color: #ea404d;
-    }
-    .redcircle-link:visited {
-        color: #ea404d;
-    }
-</style>
-<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="https://redcircle.com?utm_source=rc_embedded_player&utm_medium=web&utm_campaign=embedded_v1">RedCircle</a></p>
+						<div  class="redcirclePlayer-3e27dcb5-338f-4e3c-b7c3-1327c16b9c4b"></div>
+						<style>
+						.redcircle-link:link {
+							color: #ea404d;
+							text-decoration: none;
+						}
+						.redcircle-link:hover {
+							color: #ea404d;
+						}
+						.redcircle-link:active {
+							color: #ea404d;
+						}
+						.redcircle-link:visited {
+							color: #ea404d;
+						}
+					</style>
+<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
 						</div>
 					</div>
 				</ul>
@@ -334,351 +447,23 @@
 			</script>
 			
 		<!-- Four -->
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Want to ask the doctors a question of your own?</h2>
-					</header>
-					<p>Is there a medical topic you would like discussed?<br>
-						Feel free to email us</p>
-					<ul class="actions special">
-						<!--<li><a href="#one" class="button scrolly">Sign Up</a></li>-->
-						<li><a href="mailto: wwwmdpodcast@gmail.com" class="button wide">Email Us</a></li>
-					</ul>
-				</div>
-			</section>
 
-		<!-- Five -->
-		<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
-
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
-
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button primary">Primary</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button large">Large</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button primary fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button primary disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<select name="demo-category" id="demo-category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="col-12">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
-
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
-
-				</div>
-			</section>
-		-->
-
+		
 		<!-- Footer -->
 			<section id="footer">
-					<img height="75em" src="images/WWWMD-mic.png"></img><p>The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment.<br>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+					<img height="75em" src="images/Logo.png"></img>
+				
+				<h5 style="color: #373737;">The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment.<br>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</h5>
 				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<!--<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
 					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; What's Wrong With Me Doctor</li><li>Design: Noah Rubin/<a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
+				
 			</section>
 
 		<!-- Scripts -->
@@ -689,5 +474,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<!-- Footer (edit footer.js to edit content of footer)-->
+<!-- Mobile compatibility -->
+<!--<script src="./assets/js/mobile.js"></script>-->
 	</body>
 </html>
