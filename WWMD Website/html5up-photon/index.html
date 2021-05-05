@@ -37,27 +37,27 @@ $_POST["insert your message here"]. "From: noahgidon@gmaail.com");
 
   gtag('config', 'G-KV94FNJJEB');
 </script>
-		<title>What's Wrong With Me Doctor?</title>
+		<title>WWWMD?</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main1.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 	</head>
 	<body class="is-preload">
@@ -66,8 +66,8 @@ $_POST["insert your message here"]. "From: noahgidon@gmaail.com");
 			  <a href="#podcasts">Episodes</a>
 			  <a href="#two">Who Are We?</a>
 			  <a href="#zero" id="logo"><img height="75em" src="images/Logo.png"></img></a>
-				<a href="#one">Ask A Question</a>
-				<a href="#sponsor">Sponsor the Show</a>
+				<a href="#one">Suggest a Topic</a>
+				<a href="#sponsor">Sponsor</a>
 			  </div>
 			</div>
 			</CENTER>
@@ -92,29 +92,49 @@ $_POST["insert your message here"]. "From: noahgidon@gmaail.com");
 				
 				
 			
-			<!--<script>
+			<script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
+var onScrollHandler = function() {
+  var width = 50;
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  if (scrollTop > 100) {
+     width = 100;
   }
-}
-</script>-->
+  else {
+	width = 20;
+  }
+  document.getElementById("logo").width = width;
+};
+object.addEventListener ("scroll", onScrollHandler);
+</script>
 		<!-- Header -->
 			<section id="zero" class="main style2" style="padding-top: 150px; padding-bottom: 25px;">
 				<div class="inner">
 						<div class="row gtr-150">
 							<div class="col-2 col-12-medium">
 							</div>
+							<div class="col-2 col-12-medium">
+							<div class="desktop">
+								<img height="150em" style="float: right;" src="images/Logo.png"></img>
+								</div>
+							</div>
+							<div class="col-6 col-12-medium" style="
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%) }   /* 4 */">
+								<strong><h4 style="color: #0D5B99;">A medical podcast featuring expert physicians discussing common medical conditions in an easy to understand format</h4></strong>
+							</div>
+							<div class="col-2 col-12-medium">
+							</div>
+						</div>
+						<br>
+						<div class="row gtr-150">
+							<div class="col-2 col-12-medium">
+							</div>
 							<div class="col-4 col-12-medium">
-								<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></script>
-								<div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
+							<h5 style="color: #0D5B99;">Latest Podcast:</h5>
+							<div class="pics">
+								<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/35239aa3-aec2-4271-b872-658df51c12e0"></script>
+							<div class="redcirclePlayer-35239aa3-aec2-4271-b872-658df51c12e0"></div>
 								<style>
 								.redcircle-link:link {
 									color: #ea404d;
@@ -129,17 +149,18 @@ function scrollFunction() {
 								.redcircle-link:visited {
 									color: #ea404d;
 								}
-								</style>
-								<img style="border-radius: 7.5px;" src="./images/Listen-on-Apple-Podcasts-badge.jpg" width="30%"></img>
-								<img style="border-radius: 5px;"src="./images/google podcasts.png" width="30%"></img>
-								<img style="border-radius: 5px;"src="./images/Listen-on-Spotify-badge@2x.png" width="30%"></img>
+								</style></div><br>
+								<img style="border-radius: 7.5px; float: left; position: relative;" src="./images/Listen-on-Apple-Podcasts-badge.jpg" width="30%"></img>
+								
+								<img style="border-radius: 5px; margin: 0 5%;"src="./images/google podcasts.png" width="30%"></img>
+								<img style="border-radius: 5px; float: right; position: relative;"src="./images/Listen-on-Spotify-badge@2x.png" width="30%"></img>
 								<br><strong><a href="#podcasts"><h4 style="text-decoration: underline; color: #907ac3">Listen to previous episodes.</h4></a></strong>
 							</div>
 							<div class="col-4 col-12-medium" style="text-align: left;">
 								<h4 style="color: #0D5B99;">Episode 4:</h4>
 								<strong><h1 style="color: #373737;">Asthma</h1></strong>
 								<hr style="color: #373737;" width="50%">
-								<h4 style="color: #373737;">In this podcast, Dr. Landa discusses Asthma and clears up some popular misconceptions about the common ailment.</h4>
+								<h4 style="color: #373737;">In this podcast Dr. Landa discusses the definition and causes of asthma. He also discusses various treatment options available.</h4>
 							</div>
 							<div class="col-2 col-12-medium">
 							</div>
@@ -193,13 +214,13 @@ function closeForm() {
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container"> 
-				<CENTER><a href="#one" class="button scrolly" style="position: relative; top: -135px; background-color: #fff;">ASK THE DOCTORS A QUESTION OF YOUR OWN</a></CENTER>
+				<!--<CENTER><a href="#one" class="button scrolly" style="position: relative; top: -135px; background-color: #fff;">ASK THE DOCTORS A QUESTION OF YOUR OWN</a></CENTER>-->
 					<div class="row gtr-150">
 						<div class="col-2 col-12-medium">
 </div>
 						<div class="col-8 col-12-medium">
 							<header class="major">
-								<CENTER><h4>Do you have something that’s been bothering you, or just have a topic you want to learn more about? Ask the doctors!</h4></CENTER>
+								<CENTER><h4>Do you have a topic that you would like discussed on the show? Please suggest it below.</h4></CENTER>
 							</header>
 							<form method="post" action="/action_page.php" target="_blank">
 								<div class="container">
@@ -218,36 +239,14 @@ function closeForm() {
 									</div>
 									<div class="col-12 col-12-medium">
 									<br>
-									<CENTER><p>Our responses are not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p></CENTER>
+									<!--<CENTER><p>Our responses are not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p></CENTER>-->
 									<CENTER><input style="background-color: #fff"  type="submit" value="Submit"></CENTER>
 									</div>
 									</div>
 										
 							</form>
 							
-							<!--<p>Enter your email to be notified when we drop a new podcast.
-							<!-- Begin Mailchimp Signup Form --
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#f; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	#62B9EA
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://whatswrongwithmedoctor.us7.list-manage.com/subscribe/post?u=de9a2a2710f7f6cca4bd4f2bd&amp;id=369bb2fbeb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div style="background: #fff;" id="mc_embed_signup_scroll">
-	<!--<label for="mce-EMAIL">Subscribe</label>--
-	<input style="background: #fff;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--
-    <div style="position: absolute; left: -5000px;  " aria-hidden="true"><input type="text" name="b_de9a2a2710f7f6cca4bd4f2bd_369bb2fbeb" tabindex="-1" value=""></div>
-    <br><div style=" class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background: #fff;"></div>
-    </div>
-</form>
-</div>
-</p> -->
-
-<!--End mc_embed_signup--></div>
+							</div>
 						<div class="col-2 col-12-medium">
 						</div>
 					</div>
@@ -264,7 +263,7 @@ function closeForm() {
 
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/rayhammer.png" alt="" /></span>
 
 							</div>
 					</div>
@@ -277,30 +276,31 @@ function closeForm() {
 							<div class="row gtr-150">
 								<div class="col-3 col-12-medium">
 								<div class="doctor">
-									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
+									<a><img src="images/greenstein.png" width="90%" style="border-radius: 10px;"></a>
 								</div>
-								<h4 style="color: #373737;">Dr. Placeholder</h4>
-								<h6 style="color: #373737;">TITLE</h4>
-								</div>
-								<div class="col-3 col-12-medium">
-								<div class="doctor">
-									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
-									<h4 style="color: #373737;">Dr. Placeholder</h4>
-								<h6 style="color: #373737;">TITLE</h4>
-								</div>
+					
+								<h4 style="color: #373737;">Dr Daniel Greenstein</h4>
+								<h6 style="color: #373737;">Dentistry</h4>
 								</div>
 								<div class="col-3 col-12-medium">
 								<div class="doctor">
-									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
-									<h4 style="color: #373737;">Dr. Placeholder</h4>
-								<h6 style="color: #373737;">TITLE</h4>
+									<a><img src="images/Auerbach.png" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr  David Auerbach</h4>
+								<h6 style="color: #373737;">Ophthalmology</h4>
 								</div>
 								</div>
 								<div class="col-3 col-12-medium">
 								<div class="doctor">
-									<a><img src="images/burger.jpg" width="90%" style="border-radius: 10px;"></a>
-									<h4 style="color: #373737;">Dr. Placeholder</h4>
-								<h6 style="color: #373737;">TITLE</h4>
+									<a><img src="images/landa(1).png" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr Harold Landa</h4>
+								<h6 style="color: #373737;">Pulmonology</h4>
+								</div>
+								</div>
+								<div class="col-3 col-12-medium">
+								<div class="doctor">
+									<a><img src="images/Weiss.png" width="90%" style="border-radius: 10px;"></a>
+									<h4 style="color: #373737;">Dr Daniel Weiss</h4>
+								<h6 style="color: #373737;">Electrophysiology</h4>
 								</div>
 								</div>
 							</div>
@@ -319,11 +319,13 @@ function closeForm() {
 					<div class="container">
 					<CENTER><strong><h1 style="color: #373737;">Sponsor our Show</h1></strong></CENTER>
 					<div class="row gtr-150">
+						<div class="col-2 col-12-medium">
+						</div>
 						<div class="col-8 col-12-medium">
 						<CENTER><h4 style="color: #373737;">If you'd like to sponsor the What's Wrong With Me Doctor Podcast please email <a href="mailto:rayhammer@whatswrongwithmedoctor.com">rayhammer@whatswrongwithmedoctor.com</a></h4></CENTER>
 						</div>
-						<div class="col-4 col-12-medium">
-								<CENTER><img height="200em" src="images/WWWMD-mic.png"></CENTER>
+						<div class="col-2 col-12-medium">
+								<!--<CENTER><img height="200em" src="images/WWWMD-mic.png"></CENTER>-->
 						</div>
 					</div>
 				</div>
@@ -331,15 +333,15 @@ function closeForm() {
 		<!-- Three -->
 			<section id="podcasts" class="main style1">
 				<div class="container">
-						<strong><h1 style="color: #fff;">Past Podcasts</h1></strong>
+						<strong><h1 style="color: #fff;">Podcast Archive</h1></strong>
 					<h4>Find and subscribe to What's Wrong With Me Doctor everywhere you listen to podcasts!</h4>
 					<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for podcasts..." title="Type in a name" style="background: #fff;">-->
 					
 					<ul id="podcasts" style="list-style-type: none; margin:0; padding:0;">
 					<div class="row gtr-150">
 					
-						<div class="col-6 col-12-medium">
-							
+						<div class="col-6 col-12-medium" style="padding-bottom: 20px;">
+							<div class="pics">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/35239aa3-aec2-4271-b872-658df51c12e0"></script>
 							<div class="redcirclePlayer-35239aa3-aec2-4271-b872-658df51c12e0"></div>
 							<style>
@@ -356,10 +358,19 @@ function closeForm() {
 							.redcircle-link:visited {
 								color: #ea404d;
 							}
-						</style>
-						<p>In this podcast, Dr. Landa discusses Asthma and clears up some popular misconceptions about the common ailment.</p>
+							.pics{
+								border-radius: 10px;
+								overflow: hidden;
+								background-color: #fff;
+								border-style: solid;
+								border-width: 5px;
+
+													}
+						</style></div>
+						<!--4--><p>In this podcast Dr. Landa discusses the definition and causes of asthma. He also discusses various treatment options available.</p>
 						</div>
-						<div class="col-6 col-12-medium">
+						<div class="col-6 col-12-medium" style="padding-bottom: 20px;">
+						<div class="pics">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></script>
 						<div class="redcirclePlayer-6d007948-58ee-41b0-8c4e-8fe301cc4b1d"></div>
 						<style>
@@ -377,13 +388,13 @@ function closeForm() {
 						color: #ea404d;
 					}
 				</style>
-				
-				<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
+				</div>
+			<!--3-->	<p>In this podcast, Dr Auerbach discusses the causes of vision loss that occur in optic neuritis, the subtypes and possible treatments.</p>
 											</div>
 					<!--</div>
 					<div class="row gtr-150">-->
 					
-						<div class="col-6 col-12-medium">
+						<div class="col-6 col-12-medium" style="padding-bottom: 20px;"><div class="pics">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/699f526f-2b3f-4c04-bbf7-cd5af08fccf0"></script>
 							<div class="redcirclePlayer-699f526f-2b3f-4c04-bbf7-cd5af08fccf0"></div>
 							<style>
@@ -400,10 +411,10 @@ function closeForm() {
 							.redcircle-link:visited {
 								color: #ea404d;
 							}
-						</style>
-<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
+						</style></div>
+<!--2--><p>In this podcast, Dr. Greenstein focuses on teeth clenching and grinding (bruxism). He discusses how they are a major cause of TMJ (temperomandibular joint) and are often a result of anxiety. </p>
 						</div>
-						<div class="col-6 col-12-medium">
+						<div class="col-6 col-12-medium" style="padding-bottom: 20px;"><div class="pics">
 							<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/62423862-e325-428c-8cb1-ed9b8fc5816f/ep/3e27dcb5-338f-4e3c-b7c3-1327c16b9c4b"></script>
 						<div  class="redcirclePlayer-3e27dcb5-338f-4e3c-b7c3-1327c16b9c4b"></div>
 						<style>
@@ -420,8 +431,8 @@ function closeForm() {
 						.redcircle-link:visited {
 							color: #ea404d;
 						}
-					</style>
-<p>In this podcast, Dr. Auerbach explains the elusive, mysterious, and dangerous eye disease called Ischemic Optic Neuropathy.</p>
+					</style></div>
+<!--1--><p>In this podcast, Dr. Greenstein discusses the normal function of saliva , as well as the causes, complications, and treatments associated with dry mouth (xerostomia). </p>
 						</div>
 					</div>
 				</ul>
@@ -451,14 +462,14 @@ function closeForm() {
 		
 		<!-- Footer -->
 			<section id="footer">
-					<img height="75em" src="images/Logo.png"></img>
+					<CENTER><img height="75em" src="images/Logo.png"></img></CENTER>
 				
 				<h5 style="color: #373737;">The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment.<br>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</h5>
 				<ul class="icons">
 					<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<!--<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="mailto:rayhammer@whatswrongwithmedoctor" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; What's Wrong With Me Doctor</li><li>Design: Noah Rubin/<a href="http://html5up.net">HTML5 UP</a></li>
